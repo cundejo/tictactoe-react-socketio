@@ -1,6 +1,9 @@
 import { Box, Grommet, Heading, ResponsiveContext } from 'grommet';
 import React from 'react';
 import Board from './pages/board';
+import * as api from './api';
+
+api.sendMessage('bla')
 
 const theme = {
   global: {
