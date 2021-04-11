@@ -1,12 +1,11 @@
-import openSocket from 'socket.io-client';
+import io from 'socket.io-client';
 
-const socket = openSocket('http://localhost:3001');
+const socket = io('http://localhost:3001');
 
 socket.on('message', (msg) => {
-  console.log('message', msg)
+  console.log('message', msg);
 });
 
-export const sendMessage = (msg:string) =>{
+export const sendMessage = (msg: string) => {
   console.log('sending message', msg);
-}
-
+};
